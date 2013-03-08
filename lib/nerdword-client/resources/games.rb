@@ -1,5 +1,21 @@
 module NerdwordClient
   module Resources
+    # List of games that are associated to a User
+    #
+    # Requires embedded users and links
+    #
+    #   Games.load({
+    #     "_embedded" => {
+    #       "games" => [
+    #         "..."
+    #       ]
+    #     },
+    #     "_links" => {
+    #       "self" => {
+    #         "href" => "..."
+    #       }
+    #     }
+    #   }.to_json)
     class Games < Resource
       extend Forwardable
       include Enumerable
