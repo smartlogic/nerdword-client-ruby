@@ -9,7 +9,7 @@ module NerdwordClient
     #       "self" => {
     #         "href" => "..."
     #       },
-    #       "games" => {
+    #       "http://nerdwordapp.com/rels/games" => {
     #         "href" => "..."
     #       }
     #     }
